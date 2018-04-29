@@ -1,0 +1,15 @@
+h5 {
+    text-align: center;
+}
+
+#dice img {
+    width: 200px;
+}
+
+#monsterImage img {
+    width: 200px;
+}
+
+.col {
+    border: 1px solid black;
+}

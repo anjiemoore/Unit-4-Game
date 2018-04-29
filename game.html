@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Link to local CSS-->
+    <link rel="stylesheet" href="../Unit-4-Game/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="monsterImage">
+            <div class="col">
+                <img src="../Unit-4-Game/assets/images/AdultRedDragon.jpeg">
+                <img src="../Unit-4-Game/assets/images/AdultGreenDragon.jpeg">
+                <img src="../Unit-4-Game/assets/images/AdultBlueDragon.jpeg">
+                <img src="../Unit-4-Game/assets/images/AdultBlackDragon.jpeg">
+            </div>
+            <div class="col">
+                <p>Armor Class: <span id="armorClass">0</span></p>
+            </div>
+            <div class="col">
+                <p>Current Roll: <span id="currentRoll">0</span></p>
+            </div>
+            <div class="col">
+                <p>Guesses Left: <span id="guessesLeft">0</span></p>
+            </div>
+        </div>
+        <div class="row" id="dice">
+            <div class="col">
+                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
+            </div>
+            <div class="col">
+                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
+            </div>
+            <div class="col">
+                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
+            </div>
+            <div class="col">
+                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Wins: <span id="wins">0</span></p>
+            </div>
+            <div class="col">
+                <p>Losses: <span id="losses">0</span></p>
+            </div>
+        </div>
+    </div>
+ 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../Unit-4-Game/assets/javascript/game.js"></script> 
+</body>
+</html>
