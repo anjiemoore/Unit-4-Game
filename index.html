@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="home-bg">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,42 +10,29 @@
 
     <!--Link to local CSS-->
     <link rel="stylesheet" type="text/css" media="screen" href="../Unit-4-Game/assets/css/style.css" />
-    
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
-<body>
-    
-        <div class="card bg-dark text-white">
-                <img class="card-img" src="" alt="Card image">
-                <div class="card-img-overlay">
-                  <h5 class="card-title text-center">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text">Last updated 3 mins ago</p>
-                </div>
-              </div>
 
-        <div class="card-group">
-                <div class="card">
-                  <img class="card-img-top" src="../Unit-4-Game/assets/images/DND-1.png" width="180px" height="297px" alt="Card image cap">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Start Game</h5>
-                    <a role="button" class="btn btn-danger" href="game.html">Danger</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="../Unit-4-Game/assets/images/DND-1.png" width="180px" height="297px" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Instructions</h5>
-                      <button type="button" class="btn btn-danger" href="game.html">Danger</button>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="../Unit-4-Game/assets/images/DND-1.png" width="180px" height="297px" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Exit</h5>
-                      <button type="button" class="btn btn-danger" href="game.html">Danger</button>
-                  </div>
-                </div>
-              </div>
+<body class="home">
+
+    <div class="choices">
+      <div class="text-center bg-transparent mx-auto">
+          <a role="button" class="btn btn-danger" href="instructions.html">Instructions!</a>
+      </div>
+      <br>
+      <br>
+      <div class="text-center bg-transparent mx-auto">
+          <a role="button" class="btn btn-danger" href="game.html">Start!</a>
+      </div> 
+    </div>  
+  
+<audio autoplay>
+  <source src="../Unit-4-Game/assets/audio/indexMusic.mp3">
+</audio>
 
 <script src="../Unit-4-Game/assets/javascript/game.js"></script>  
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

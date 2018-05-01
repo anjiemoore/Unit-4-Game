@@ -2,7 +2,8 @@ const MONSTER_AC_MIN = 15;
 const MONSTER_AC_MAX = 30;
 const DICE_VALUES = [10, 5, 7, 3];
 const MAX_GUESS = 3;
-const MONSTER_IMAGES = 
+const MONSTER_IMAGES = ["assets/images/AdultBlackDragon.jpeg", "assets/images/AdultBlueDragon.jpeg", "assets/images/AdultRedDragon.jpeg", "assets/images/AdultGreenDragon.jpeg"];
+
 
 function newRound() {
     //Get random number for monster armor
@@ -10,6 +11,8 @@ function newRound() {
     $("#armorClass").text(ac);
 
     //Get random monster
+    var randomMonsterImage = MONSTER_IMAGES[Math.floor(Math.random() * MONSTER_IMAGES.length)]
+    $("#monsterImage").attr("src", randomMonsterImage);
 
     //randomize dice value
     let randomizedDice = DICE_VALUES.sort(function() { return 0.5 - Math.random() });

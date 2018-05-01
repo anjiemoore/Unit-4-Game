@@ -10,10 +10,42 @@
 
     <!--Link to local CSS-->
     <link rel="stylesheet" type="text/css" media="screen" href="../Unit-4-Game/assets/css/style.css" />
-    
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase:700" rel="stylesheet">
+
 </head>
-<body>
-    
+
+<body class="instructions">
+
+<br>
+
+<div class="card w-50 mx-auto">
+ <div class="card-body">
+   <h5 class="card-title text-center">Instructions</h5>
+   <hr>
+   <ul>
+       <li>Defeat the dragon!</li>
+       <li>Each dragon has a set Armor Class, that you need to beat to win.</li>
+       <li>Click on the d10's at the bottom of the screen to find the value of their roll.</li>
+       <li>You only have 3 guesses, so guess wisely!</li>
+       <li>If you roll higher than the dragons armor class, you win!</li>
+       <li>If you don't, you lose!</li>
+       <li>Happy playing!</li>
+   </ul>
+   <div class="text-center mx-auto">
+        <a role="button" class="btn btn-danger" href="index.html">Go Back!</a>
+    </div> 
+</div>
+</div>
+  
+<audio autoplay>
+        <source src="../Unit-4-Game/assets/audio/instructionsMusic.mp3">
+</audio>
+
 <script src="../Unit-4-Game/assets/javascript/game.js"></script>  
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

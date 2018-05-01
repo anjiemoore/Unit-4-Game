@@ -9,50 +9,63 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Link to local CSS-->
     <link rel="stylesheet" href="../Unit-4-Game/assets/css/style.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase:700" rel="stylesheet">
+
 </head>
-<body>
+<body class="game">
+
     <div class="container">
-        <div class="row" id="monsterImage">
-            <div class="col">
-                <img src="../Unit-4-Game/assets/images/AdultRedDragon.jpeg">
-                <img src="../Unit-4-Game/assets/images/AdultGreenDragon.jpeg">
-                <img src="../Unit-4-Game/assets/images/AdultBlueDragon.jpeg">
-                <img src="../Unit-4-Game/assets/images/AdultBlackDragon.jpeg">
+       <div class="row">
+            <div class="col text-center">
+                <p>WINS: <span id="wins">0</span></p>
             </div>
-            <div class="col">
-                <p>Armor Class: <span id="armorClass">0</span></p>
-            </div>
-            <div class="col">
-                <p>Current Roll: <span id="currentRoll">0</span></p>
-            </div>
-            <div class="col">
-                <p>Guesses Left: <span id="guessesLeft">0</span></p>
-            </div>
-        </div>
-        <div class="row" id="dice">
-            <div class="col">
-                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
-            </div>
-            <div class="col">
-                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
-            </div>
-            <div class="col">
-                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
-            </div>
-            <div class="col">
-                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
+            <div class="col text-center">
+                <p>LOSSES: <span id="losses">0</span></p>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <p>Wins: <span id="wins">0</span></p>
+            <div class="col text-center">
+                <p>ARMOR CLASS: <span id="armorClass">0</span></p>
             </div>
+            <div class="col text-center">
+                <p>CURRENT ROLL: <span id="currentRoll">0</span></p>
+            </div>
+            <div class="col text-center">
+                <p>GUESSES LEFT: <span id="guessesLeft">0</span></p>
+            </div>
+        </div>
+        <div class="row fixed-bottom animated infinite bounce" id="dice">
+            <div class="col text-center mx-auto">
+                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
+            </div>
+            <div class="col text-center mx-auto">
+                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
+            </div>
+            <div class="col text-center mx-auto">
+                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
+            </div>
+            <div class="col text-center mx-auto">
+                <img src="../Unit-4-Game/assets/images/die.png" data-value="0">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
             <div class="col">
-                <p>Losses: <span id="losses">0</span></p>
+                <img class="rounded mx-auto d-block animated infinite pulse" id="monsterImage">
             </div>
         </div>
     </div>
- 
+
+<audio autoplay>
+     <source src="../Unit-4-Game/assets/audio/gameMusic.mp3">
+</audio>
+          
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
